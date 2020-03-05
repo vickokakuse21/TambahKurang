@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1 id="counter">0</h1>
+    <button id="tambah">Tambah 1</button>
+    <button id="kurang">Kurang 1</button>
+    <button id="reset">Reset</button>
+</body>
+<script>
+    document.getElementById("tambah").onclick = function () {
+        a = document.getElementById("counter")
+        a.innerText = parseInt(a.innerText) + 1;
+    }
+
+    document.getElementById("kurang").onclick = function () {
+        a = document.getElementById("counter")
+        a.innerText = parseInt(a.innerText) - 1;
+    }
+
+    document.getElementById("reset").onclick = function () {
+        a = document.getElementById("counter")
+        a.innerText = 0;
+    }
+</script>
+
+</html>
